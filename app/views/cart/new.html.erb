@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script type="text/javascript" src="resumen.js"></script>
+    </head>
+<body>
+<table>
+  <tr>
+    <td id="tabProducts">    
+        
+    <%= render 'form' %>
+    
+    </td>
+    <td id="tabCart">
+        <section>
+            <H1>My Cart</H1>
+            <hr></hr>
+            <br></br>
+
+            <table id="tbCarrito">
+            </table>
+
+            <hr></hr>
+
+            <%= render 'cart' %>
+
+            <hr></hr>
+
+            <input type="button" id="btnCheckout" onclick="goCheckout();" value="Checkout" class="button pulse"></input>
+
+            <input type="button" onclick="clearCart();" id="btnClear" value="Clear" class="button pulse"></input>
+
+        </section>
+    </td>
+  </tr>
+</table>
+
+        <%= render 'popup' %>
+
+</body>
+</html> 

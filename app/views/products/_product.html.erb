@@ -1,0 +1,64 @@
+<table>
+  <tr>
+    <td id="tabProducts">    
+     	<div id="wrapper">
+		<div class="accordionButton"><p class="pHeaders">VIDEOGAMES</p></div>
+		<div class="accordionContent">
+ 		<table border="1" class="tabProducts2">
+			<tr>
+			<% @products.each do |product| %>
+			<% if product.category_id == 2 %>
+				<td class="tdProduct" id="prod-<%= product.id %>"> 
+					<a class="aProductName"><%= product.name %></a>
+					<br></br>
+					<a href="#" class="js__p_start">
+
+				<%= image_tag("/assets/"+product.Path, :class => "pulse imgProducts", :onclick => "getProductInfo('"+product.id.to_s+"','"+product.name+"','"+product.Description+"','"+product.price.to_s+"','"+product.Discount.to_s+"','"+product.Path+"');")%>
+
+				   </a>
+				</td>
+			<% end %>
+		  <% end %>
+			</tr>
+		</table>
+		</div>
+		<div class="accordionButton"><p class="pHeaders">MUSIC</p></div>
+		<div class="accordionContent">
+		<table border="1" class="tabProducts2">
+			<tr>
+			<% @products.each do |product| %>
+			<% if product.category_id == 3 %>
+			<td class="tdProduct" id="prod-<%= product.id %>"> 
+					<a class="aProductName"><%= product.name %></a>
+					<br></br>
+					<a href="#" class="js__p_start">
+
+				<%= image_tag("/assets/"+product.Path, :class => "pulse imgProducts", :onclick => "getProductInfo('"+product.id.to_s+"','"+product.name+"','"+product.Description+"','"+product.price.to_s+"','"+product.Discount.to_s+"','"+product.Path+"');")%>
+
+				   </a>
+				</td>
+			<% end %>
+		  <% end %>
+			</tr>
+		</table>
+		</div>
+		<div class="accordionButton"><p class="pHeaders">ANIME & MANGA</p></div>
+		<div class="accordionContent">
+		<table border="1" class="tabProducts2">
+			<tr>
+			<% @products.each do |product| %>
+			<% if product.category_id == 4 %>
+					<td class="tdProduct" id="prod-<%= product.id %>"> 
+					<a class="aProductName"><%= product.name %></a>
+					<br></br>
+					<a href="#" class="js__p_start">
+
+				<%= image_tag("/assets/"+product.Path, :class => "pulse imgProducts", :onclick => "getProductInfo('"+product.id.to_s+"','"+product.name+"','"+product.Description+"','"+product.price.to_s+"','"+product.Discount.to_s+"','"+product.Path+"');")%>
+
+				   </a>
+				</td>
+				</td>
+			<% end %>
+		  <% end %>
+			</tr>
+		</table>

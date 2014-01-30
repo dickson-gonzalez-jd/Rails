@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+<body>
+<table>
+  <tr>
+    <td id="tabProducts">    
+   
+    <p id="resTitle">Thanks for your Purchase!!</p>
+    <p>Your order will ship on the next carrier, this are your purchase details.</p>
+
+
+    <table class="tableResume">
+        <tr>
+            <td>Name :</td>
+            <td id="tdName"></td>
+        </tr>
+        <tr>
+            <td>Last Name :</td>
+            <td id="tdLastName"></td>
+        </tr>
+        <tr>
+            <td>Phone Number :</td>
+            <td id="tdPhone"></td>
+        </tr>
+        <tr>
+            <td>Address :</td>
+            <td id="tdAddress"></td>
+        </tr>
+        <tr>
+            <td>Country :</td>
+            <td id="tdCountry"></td>
+        </tr>
+        <tr>
+            <td>Credit Card Number :</td>
+            <td id="tdcreNumber"></td>
+        </tr>
+        <tr>
+            <td>Credit Card Code :</td>
+            <td id="tdcreCode"></td>
+        </tr>
+        <tr>
+            <td>Sales Check Total :</td>
+            <td id="tdTotal"></td>
+        </tr>
+
+
+    </table>
+
+
+    <input id="btnBack" class="button pulse" type="button" value="Back" onclick="goProducts();">
+    </td>
+
+    <td id="tabCart">
+        
+    </td>
+  </tr>
+</table>
+
+        <%= render 'popup' %>
+
+</body>
+</html> 

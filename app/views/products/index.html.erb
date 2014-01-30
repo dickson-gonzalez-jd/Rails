@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="hover.css">
+		<script type="text/javascript" src="jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="jquery.popup.js"></script>
+		<link rel="stylesheet" href="jquery.popup.css" type="text/css">
+		<link href="style/format.css" rel="stylesheet" type="text/css" />
+	</head>
+<body>
+	<input id="idProduct" value="" type="hidden"></input>
+		<%= render 'product' %>
+		</div>
+		</div>
+    </td>
+    <td id="tabCart">
+    	<section>
+    		<H1>My Cart</H1>
+    		<hr></hr>
+    		<br></br>
+
+    		<table id="tbCarrito">
+    		</table>
+    		<a id="discount"></a>
+    		<hr></hr>
+
+			<%= render 'cart' %>
+
+    		<hr></hr>
+
+    		<input type="button" id="btnCheckout" onclick="goCheckout();" value="Checkout" class="button pulse"></input>
+
+    		<input type="button" onclick="clearCart();" id="btnClear" value="Clear" class="button pulse"></input>
+
+    	</section>
+    </td>
+  </tr>
+</table>
+
+	<%= render 'popup' %>
+
+</body>
+</html> 
